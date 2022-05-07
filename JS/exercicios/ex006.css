@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+body{
+    background-color: rgb(52, 160, 233);
+    color: aliceblue; 
+    font: normal 20pt times;
+}
+
+h2 {
+    color: rgb(219, 219, 97);
+}

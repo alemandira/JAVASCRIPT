@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body {
+    font: normal 18pt arial;
+}
+
+input {
+    font: normal 18pt arial;
+    width: 100px;
+}
+
+#res {
+    font-style: italic;
+    margin-top: 20px;
+}

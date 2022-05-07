@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Mandira.ico" type="image/x-icon">
+    <title>Eventos DOM</title>
+
+    <style>
+        div#area {
+            font: normal 20pt arial;
+            background-color: rgb(37, 158, 37);
+            color: white;
+            width: 400px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'sou eu Alessandro'
+            a.style.color = ' white'
+            a.style.background = 'red'
+        }
+
+        function entrar() {
+            a.innerText = 'ce tá maluco'
+            a.style.color = 'black'
+            a.style.background = 'yellow'
+        }
+
+        function sair() {
+            a.innerText = 'Interaja...'
+            a.style.color = 'white'
+            a.style.background = 'rgb(37, 158, 37)'
+        }
+
+    </script>
+    
+</body>
+</html>

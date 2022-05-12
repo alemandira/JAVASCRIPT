@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+body {
+    background-color: rgb(29, 129, 211);  
+    font: normal 15pt arial;                   
+}
+
+header {
+    color: white;
+    text-align: center;
+   
+}
+
+section {
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.733);
+
+}
+
+div {
+    padding: 10px;
+    text-align: center;
+}
+
+div#msg2 {
+    font: italic 15pt impact;
+}
+
+footer {
+    color: white;
+    font: normal 15pt times;
+    text-align: center;
+    font-style: italic;
+}
+

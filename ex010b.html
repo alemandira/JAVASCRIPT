@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../M.jpg" type="image/x-icon">
+    <title>Nacionalidade</title>
+
+    <style>
+        body {
+            background-color: chocolate;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .origem {
+            width: 450px;
+            height: 140px;
+            margin: auto;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            border: 8px solid rgb(73, 2, 2);
+            box-shadow: 10px 5px 10px rgb(231, 228, 6);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>País de origem</h1>
+    <hr>
+
+    <form class="origem">
+        Em qual País você nasceu : <input type="text" name="txtnac" id="txtnac"> <input type="button" value="verificar"
+            onclick="analisar()">
+        <div id="res">Aguardando resultado....</div>
+    </form>
+
+    <script>
+        function analisar() {
+            var txtnac = window.document.querySelector('#txtnac')
+            var res = window.document.querySelector('#res')
+            var pais = String(txtnac.value)
+
+            res.innerHTML = (`<p>Local de origem: <strong>${pais}.</strong></p>`)
+
+            if (pais == 'Brasil') {
+                res.innerHTML += (`<p>Devido seu país de origem você é <strong>Brasileiro</strong>.</p>`)
+            }
+            else {
+                res.innerHTML += (`<p>Devido seu país de origem você é <strong>estrangeiro</strong>.</p>`)
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../M.jpg" type="image/x-icon">
+    <title>Eleição 2023</title>
+
+    <style>
+        body {
+            background-color: yellowgreen;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .votar {
+            width: 390px;
+            height: 160px;
+            background-color: aliceblue;
+            margin: auto;
+            padding: 15px;
+            border-radius: 10px;
+            border: 4px solid rgba(219, 198, 5, 0.918);
+            box-shadow: 3px 3px 3px black;
+
+        }
+
+        #idade {
+            width: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Eleições 2023</h1>
+    <hr>
+    <form class="votar">
+        Por favor informe a sua idade: <input type="number" name="idade" id="idade"> <input type="button"
+            value="verificar" onclick="verificar()"> | <input type="reset" value="Limpar">
+        <div id="res">Aguarde por favor....</div>
+    </form>
+
+    <script>
+        function verificar() {
+            var idade = window.document.querySelector('#idade')
+            var res = window.document.querySelector('#res')
+            var anos = Number(idade.value)
+
+            res.innerHTML = (`<p>Você tem ${anos} anos.</p>`)
+            if (anos < 1) {
+                res.innerHTML += (`<p>O valor ${anos}, é um valor inválido...</p>`)
+            }
+            else if (anos < 16) {
+                res.innerHTML += (`<p>Você não pode votar.</p>`)
+            }
+            else if (anos < 18 || anos >= 60) {
+                res.innerHTML += (`<p>O voto é opcional.</p>`)
+            }
+            else if (anos >= 18 && anos < 60) {
+                res.innerHTML += (`<p>O voto é obrigatório</p>`)
+            }
+                    }
+    </script>
+
+</body>
+
+</html> 

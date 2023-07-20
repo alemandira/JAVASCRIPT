@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(27, 169, 212);
+    font: normal 15pt arial;
+    
+}
+
+header {
+    color: white;   
+    text-align: center;
+    
+    
+}
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px black;    
+}
+
+div {
+    text-align: left;
+    padding: 15px;
+}
+
+#txti {
+    width: 50px;
+}
+
+#txtf {
+    width: 65px;
+}
+
+#txtp {
+    width: 60px;
+}
+
+footer {    
+    margin-top: 30px;
+    color: white;
+    text-align: center;   
+    font-style: italic;
+}

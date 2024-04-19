@@ -21,17 +21,21 @@
 </head>
 <body>
     <h1>Exercício com numeros</h1><hr>
-    <p>exemplos.</p>    
+    <p>exemplos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repellat modi tempora voluptatibus reiciendis minus labore, nobis officiis laborum velit facere nihil, nisi aliquam eaque. Illo quaerat perferendis beatae explicabo.
+        Lorem, ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Quae architecto similique libero nihil commodi</b>, nobis veniam ipsam, corporis suscipit quaerat consequatur, mollitia earum nemo vero. Reiciendis commodi possimus quaerat perferendis.
+
+    </p>    
     <script>        
-       var n1 = Number.parseInt(window.prompt('digite um número:'))
-       var n2 = Number.parseInt(window.prompt('digite outro número:'))
-       var s = n1 + n2
-       window.alert(`A soma de ${n1} + ${n2} é: ${s}`) //template String.
+       var n1 = Number(window.prompt('digite um número:'))
+       var n2 = Number(window.prompt('digite outro número:'))
+       var soma =  Number(n1 + n2)
+       window.alert(`A soma de ${n1} + ${n2} é: ${soma}`) //template String.
       
     </script>
 
 <script>
-    document.write('Eu estou no corpo do documento.')
+    document.write(`Eu estou no corpo do documento: A soma de ${n1} + ${n2} é: ${soma}`)
     </script>
 </body>
 </html>

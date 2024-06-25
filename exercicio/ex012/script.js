@@ -4,9 +4,10 @@ function carregar() {
     var msg2 = window.document.getElementById('msg2')
     var data = new Date()
     var horas = data.getHours()
-    //var horas =20
+    var minutos = data.getMinutes()
+    //var horas =19
 
-    msg.innerHTML = `Agora são ${horas} horas.`
+    msg.innerHTML = `Agora são ${horas} horas e ${minutos} minutos.`
 
     if (horas >= 0 && horas < 12) {
         img.src = '01dia.jpg'

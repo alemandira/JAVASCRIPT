@@ -1,54 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="M.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Idade</title>
+    <link rel="shortcut icon" href="logoM.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Aeroporto</title>
 
 </head>
 
 <body>
     <header>
-        <h1>Aeroporto de São Paulo</h1><hr>
+        <h1>Aeroporto -- Checking</h1><hr>
     </header>
 
     <section>
-        <div>
-            <p>digite o seu ano nascimento:
-                <input type="number" name="txtano" id="txtano">
-            </p>
 
-            <p>Sexo:
-                <input type="radio" name="sex" id="mas" checked>
-                <label for="mas">Masculino</label>
-                <input type="radio" name="sex" id="fem">
-                <label for="fem">Feminino</label>
-            </p>
+            <form action="formulario">
+                <div id="menu">
+                    <p>
+                        Ano de nascimento:
+                        <input type="number" name="txtano" id="txtano" min="1">
+                    </p>
+                    <p>
+                        Sexo:
+                        <input type="radio" name="sexo" id="masc" checked>
+                        <label for="masc">Masculino</label>
+                        <input type="radio" name="sexo" id="fem">
+                        <label for="fem">Feminino</label>
+                    </p>                    
+                </div>
 
-            <p>
-                <input type="button" value="Verificar" onclick="verificar()">
-            </p>
+                <div id="res">                    
+                        Preencha os dados acima:       
+                        <div id="fotos">
+                            <img src="aeroporto.jpg" alt="aeroporto">
+                        </div>               
+                </div>
 
-        </div>
+                <p>
+                    <input type="button" value="Verificar" onclick="verificar()">              
+                    <input type="reset" value="Limpar" onclick="limpar()">
+                </p>
 
-
-        <div id="res">
-            Preencha os dados acima para verificação...
-            <p><img src="aeroporto.jpg" alt="Aeroporto" ></p>
-        </div>
-
-            
-
-
+            </form>
 
     </section>
 
-    <footer>&copy;Alemandira</footer>
+    <footer><p>&copy;Alemandira</p></footer>
 
     <script src="script.js"></script>
+    
 </body>
 
 </html>
